@@ -60,7 +60,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "ms01ltexx-user 4.4.2 KOT49H G7105XXUBNI2 release-keys");
         property_set("ro.product.model", "SM-G7105");
         property_set("ro.product.device", "ms01lte");
-        property_set("ro.telephony.ril_class", "SamsungMSM8226RIL");
         property_set("ro.telephony.default_network", "3");
         property_set("telephony.lteOnCdmaDevice", "0");
     } else if (strstr(bootloader, "G7102")) {
@@ -70,7 +69,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.product.model", "SM-G7102");
         property_set("ro.product.device", "ms013g");
         property_set("persist.radio.multisim.config", "dsds");
-        property_set("ro.telephony.ril_class", "SamsungMSM8226DSRIL");
         property_set("ro.telephony.default_network", "3");
         property_set("telephony.lteOnCdmaDevice", "0");
     }
